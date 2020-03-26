@@ -39,13 +39,10 @@ var removeNthFromEnd = function (head, n) {
         start = start.next;
         start.val = i + 'a'
     }
-
     
     while(start.next) {
-  
         start = start.next;
         end = end.next;
-
     }
 
     return pre.next;
