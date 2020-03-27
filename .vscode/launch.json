@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/10.正则表达式匹配.js",
+            "program": "${workspaceFolder}/18.四数之和.js",
             "skipFiles": [
                 "<node_internals>/**"
             ]

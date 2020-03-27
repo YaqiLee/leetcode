@@ -16,10 +16,10 @@ var fourSum = function (nums, target) {
 
     nums.sort((a, b) => a - b);
 
+    console.log(nums);
+
     for (let i = 0; i < length; i++) {
         let L = i + 1, M = i + 2, R = length - 1;
-
-
 
 
         while (M < R) {
@@ -27,33 +27,34 @@ var fourSum = function (nums, target) {
             let a = [nums[i], nums[L], nums[M], nums[R]];
             let s = nums[i] + nums[L] + nums[M] + nums[R];
 
-            // console.log(a);
 
             if (s < target) {
+                M++;
 
-                if (M < R - 1) {
-                    M++;
-                }
-                else {
-                    L++;
-                    M = L + 1;
-                    R = length - 1;
-                }
+                if(nums) {
 
-                console.log(nums[i],nums[L],nums[M],nums[R]);
-                
+                }
             }
             else if (s > target) {
                 R--;
             }
             else {
+                M++;
+                R--;
 
+                if (!used.includes(a.join())) {
+                    used.push(a.join());
+                    result.push(a)
+                }
+            }
+
+            if (M >= R) {
                 L++;
                 M = L + 1;
-                R = length - 1;
-
-                result.push(a)
+                R = length - 1
             }
+
+
         }
     }
 
@@ -63,4 +64,6 @@ var fourSum = function (nums, target) {
 };
 // @lc code=end
 
-fourSum([1, 0, -1, 0, -2, 2], 1);
+fourSum([1, 2, -1, -2, 0, 0] , 0);
+// fourSum([-1, -2, 3, 0, 2, 7, 4, 4, 5, -2, 1] , 5);
+// fourSum([1, 2, -1, -2, 0, 0,3,4,5,6,7,8,-9,-4,-2,-1,3,4], 5);
