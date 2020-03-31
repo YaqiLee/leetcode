@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/18.四数之和.js",
+            "program": "${workspaceFolder}/46.全排列.js",
             "skipFiles": [
                 "<node_internals>/**"
             ]
