@@ -32,7 +32,7 @@ var generatePermute = function (result, nums, use, used) {
             used[i] = true;
    
             generatePermute(result, nums, use, used);
-
+            // 回溯
             used[i] = false;
             use.pop();
         }
