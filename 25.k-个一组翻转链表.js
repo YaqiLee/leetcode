@@ -17,7 +17,6 @@
  * @param {number} k
  * @return {ListNode}
  */
-//// 未完成
 var reverseKGroup = function (head, k) {
     let curr1 = head, i = 0;
     let reverse = new ListNode(0), rHead = reverse;
