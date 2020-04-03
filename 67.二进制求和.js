@@ -39,8 +39,6 @@ var addBinary = function (a, b) {
         result = '1' + result;
     }
 
-    console.log(result);
-
     return result
 };
 var getNum = function (sum) {
@@ -59,7 +57,7 @@ var getNum = function (sum) {
 
         default:
             c = 0;
-            t = s;
+            t = sum;
             break;
     }
 
