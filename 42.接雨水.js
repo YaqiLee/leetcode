@@ -16,11 +16,12 @@ var trap = function (height) {
     let max_left = [0];
     let max_right = Array(height.length).fill(0);
     
+    // 左边最大值序列
     for (let i = 1; i < height.length - 1; i++) {
         max_left[i] = Math.max(max_left[i - 1], height[i - 1]);
         
     }
-
+    // i 右边最大值
     for (let i = height.length - 2; i >= 0; i--) {
         max_right[i] = Math.max(max_right[i + 1], height[i + 1]);
     }
