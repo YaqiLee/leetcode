@@ -17,8 +17,7 @@
  * @return {number[][]}
  */
 var levelOrder = function (root) {
-    let result = [], seq = [];
-    let pL = pR = null;
+    let result = [];
 
     if(!root) return [];
 
