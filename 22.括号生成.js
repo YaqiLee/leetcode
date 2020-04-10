@@ -23,6 +23,8 @@ var generateParenthesis = function (n) {
 
 var generateBrackets = function (res, str, l, r) {
 
+    console.log(str, l, r);
+    
     if(l == 0 && r == 0){
         res.push(str);
         return;
@@ -40,4 +42,4 @@ var generateBrackets = function (res, str, l, r) {
 
 // @lc code=end
 
-generateParenthesis(3);
+generateParenthesis(2);
