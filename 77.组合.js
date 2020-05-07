@@ -29,6 +29,8 @@ var combineHelper = function (result, n, k, start, used, temp) {
             temp.push(i);
         }
 
+        console.log(start);
+        
         used[i] = true;
 
         combineHelper(result, n, k, i + 1, used, temp);
