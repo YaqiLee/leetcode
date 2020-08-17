@@ -16,7 +16,6 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-// 自底向上
 var isBalanced = function (root) {
 
     return height(root) >= 0;
@@ -37,18 +36,4 @@ var height = function (root) {
 }
 
 // @lc code=end
-function TreeNode(val) {
-    this.val = val;
-    this.left = this.right = null;
-}
 
-let root = new TreeNode(3);
-let left = new TreeNode(9);
-let right = new TreeNode(20);
-right.left = new TreeNode(15);
-right.right = new TreeNode(7);
-
-root.left = left;
-root.right = right;
-
-isBalanced(root)
